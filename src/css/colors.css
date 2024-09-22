@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #A142F4; /* Color principal del logo */
+  --secondary-color: #A142F4; /* Color secundario */
+  --tertiary-color: #4285F4; /* Tercera variación */
+  --background-color: #ffffff; /* Fondo blanco para la web */
+  --text-color: #333333; /* Texto principal en gris oscuro */
+  --link-hover-color: #007BFF; /* Color para los enlaces al hacer hover */
+}
+
+/* Uso de los colores */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+a:hover {
+  color: var(--link-hover-color); /* Cambia el color al hacer hover */
+}
+
+header {
+  background-color: var(--background-color); /* Fondo blanco para el header */
+  color: var(--text-color); /* Texto en gris oscuro */
+  border-bottom: 2px solid var(--primary-color); /* Línea debajo del header */
+}
+
+footer {
+  background-color: var(--background-color); /* Fondo blanco para el footer */
+  color: var(--text-color); /* Texto en gris oscuro */
+  border-top: 2px solid var(--primary-color); /* Línea en la parte superior */
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}

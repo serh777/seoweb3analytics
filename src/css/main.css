@@ -1,0 +1,231 @@
+/* Estilo de la cabecera */
+header {
+  background-color: #ffffff; /* Fondo blanco */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Logo y animación del texto */
+.logo-container {
+  text-align: center;
+  flex: 1;
+}
+
+.animated-text {
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #A142F4, #6B0FAF, #8B5ED3); /* Gradiente lilas */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s ease infinite;
+  background-size: 200% 200%;
+  transition: transform 0.3s ease;
+}
+
+.animated-text:hover {
+  transform: scale(1.1);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navegación */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex: 2;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6B0FAF; /* Enlaces lilas */
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  transition: color 0.3s ease, border 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia el color al hacer hover */
+  background-color: #6B0FAF; /* Fondo lila al hacer hover */
+  border-radius: 5px;
+}
+
+/* Estilos del texto y bloques */
+body {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #333; /* Texto en gris oscuro */
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; /* Tamaño de fuente más grande */
+  line-height: 1.6; /* Mejorar la legibilidad */
+}
+
+h1, h2, h3 {
+  color: #6B0FAF; /* Títulos lilas */
+}
+
+section {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+section#business-model {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+section#business-model h2 {
+  color: #6B0FAF;
+}
+
+footer {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #333; /* Texto en gris oscuro */
+  text-align: center;
+  padding: 10px; /* Reducir padding del footer */
+  font-size: 14px;
+  border-top: 2px solid #6B0FAF;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: #6B0FAF;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #ffffff;
+  background-color: #6B0FAF;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Estilos para las tarjetas de los planes */
+.plans-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: #f9f9f9; /* Fondo claro y neutral */
+  gap: 40px; /* Espacio entre los planes */
+}
+
+.plan-box {
+  width: 300px;
+  padding: 30px;
+  background-color: #ffffff; /* Fondo blanco para más limpieza visual */
+  color: #333; /* Texto oscuro para contraste */
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Borde sutil y claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para elegancia */
+  text-align: left; /* Alineación izquierda para un look más profesional */
+  transition: box-shadow 0.3s ease;
+}
+
+.plan-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efecto hover refinado */
+}
+
+h3 {
+  color: #0066cc; /* Azul profesional para los títulos */
+  margin-bottom: 15px;
+}
+
+p {
+  color: #666; /* Texto en gris medio para evitar alto contraste */
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #0066cc; /* Botón en azul profesional */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #005bb5; /* Efecto hover en botón más sutil */
+}
+
+
+/* Estilos del formulario de contacto */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #6B0FAF;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #6B0FAF;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #8B5ED3;
+}
+
+.seo-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.tools-section {
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
